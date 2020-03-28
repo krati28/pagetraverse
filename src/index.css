@@ -6,8 +6,8 @@ body {
   font-family: sans-serif;
   }
   li{
-    display: inline;
-    /* float: right; */
+    /* display: inline; */
+    float: right;
   }
   nav ul.header li {
   display: inline;
@@ -83,29 +83,3 @@ body {
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
   /* .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0} */
-
-
-
-
-
-
-  .vertical-menu {
-    width: 200px;
-  }
-  
-  .vertical-menu a {
-    background-color: #eee;
-    color: black;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-  }
-  
-  .vertical-menu a:hover {
-    background-color: #ccc;
-  }
-  
-  .vertical-menu a.active {
-    background-color: #4CAF50;
-    color: white;
-  }

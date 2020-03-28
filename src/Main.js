@@ -10,7 +10,7 @@ class Main extends Component{
     render(){
         return(
             <HashRouter>
-            <div class="vertical-menu">
+            <div>
                 <h1>SMS Hub</h1>
                 <ul className="header">
                     <div class="dropdown">
