@@ -45,23 +45,25 @@ class Main extends Component{
                     <div class="dropdown">
                         <button class="dropbtn">ESME Management</button>
                             <div class="dropdown-content">
-                                <ul> <NavLink  to="/link1">Link1</NavLink></ul>
-                                
+                                <ul> <NavLink  to="/link1">ESME Accounts</NavLink></ul>
+                                <ul> <NavLink  to="/link1">Ports</NavLink></ul>
                             </div>
                     </div>
 
                     <div class="dropdown">
                         <button class="dropbtn">Session Management</button>
                             <div class="dropdown-content">
-                                <ul> <NavLink  to="/link1">Link1</NavLink></ul>
-                                
+                                <ul> <NavLink  to="/link1">ESME Sessions</NavLink></ul>
+                                <ul> <NavLink  to="/link1">SMSC Sessions</NavLink></ul>
+                                <ul> <NavLink  to="/link1">Node Sessions</NavLink></ul>
                             </div>
                     </div>
 
                     <div class="dropdown">
                         <button class="dropbtn">Rules Management</button>
                             <div class="dropdown-content">
-                                <ul> <NavLink  to="/link1">Link1</NavLink></ul>
+                            <ul> <NavLink  to="/link1">Rules Configuration</NavLink></ul>
+                            <ul> <NavLink  to="/link1">Hub Rules Configuration</NavLink></ul>
                                 
                             </div>
                     </div>
@@ -69,7 +71,7 @@ class Main extends Component{
                     <div class="dropdown">
                         <button class="dropbtn">Message Management</button>
                             <div class="dropdown-content">
-                                <ul> <NavLink  to="/link1">Link1</NavLink></ul>
+                            <ul> <NavLink  to="/link1">SMS Query</NavLink></ul>
                                 
                             </div>
                     </div>
@@ -77,7 +79,9 @@ class Main extends Component{
                     <div class="dropdown">
                         <button class="dropbtn">User Management</button>
                             <div class="dropdown-content">
-                                <ul> <NavLink  to="/link1">Link1</NavLink></ul>
+                            <ul> <NavLink  to="/link1">Change Password</NavLink></ul>
+                            <ul> <NavLink  to="/link1">Provision User</NavLink></ul>
+                            <ul> <NavLink  to="/link1">Customer Portal User</NavLink></ul>
                                 
                             </div>
                     </div>
