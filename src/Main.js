@@ -4,12 +4,16 @@ import Home from "./Home"
 import Stuff from "./Stuff";
 import Contact from "./Contact"
 import Link1 from "./link1"
+
 import HomeNetwork from './envSetup/homeNetwork';
+import RedirectionList from './envSetup/redirectionList';
+
+// import AddRedirectionList from './addComponents/add_redirectionList';
 
 class Main extends Component{
     render(){
         return(
-            <HashRouter>
+            <HashRouter> 
             <div>
                 <h1>SMS Hub</h1>
                 <ul className="header">
@@ -26,7 +30,7 @@ class Main extends Component{
                                 <ul> <NavLink  to="/envSetup/homeNetwork">Home Network</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Retry Policy</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Redirection Accounts</NavLink></ul>
-                                <ul> <NavLink  to="/link1">Redirection Lists</NavLink></ul>
+                                <ul> <NavLink  to="/envSetup/RedirectionList">Redirection Lists</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Operator Profile</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Path Details</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Operator Cluster</NavLink></ul>
@@ -71,8 +75,7 @@ class Main extends Component{
                     <div class="dropdown">
                         <button class="dropbtn">Message Management</button>
                             <div class="dropdown-content">
-                            <ul> <NavLink  to="/link1">SMS Query</NavLink></ul>
-                                
+                                <ul> <NavLink  to="/link1">SMS Query</NavLink></ul>
                             </div>
                     </div>
 
@@ -95,6 +98,9 @@ class Main extends Component{
                     <Route path="/contact" component={Contact}/>
                     <Route path="/link1" component={Link1}/>
                     <Route path="/envSetup/homeNetwork" component={HomeNetwork}/>
+                    <Route path="/envSetup/RedirectionList" component={RedirectionList} />
+
+                    {/* <Route path="/addComponents/add_redirectionList" component={AddRedirectionList} /> */}
                 </div>
             </div>
         </HashRouter>
