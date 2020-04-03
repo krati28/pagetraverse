@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import {Route, NavLink, HashRouter} from "react-router-dom";
+import {Route, NavLink, Router} from "react-router-dom";
 import Home from "./Home"
 import Stuff from "./Stuff";
 import Contact from "./Contact"
 import Link1 from "./link1"
-
-import HomeNetwork from './envSetup/homeNetwork';
-import RedirectionList from './envSetup/redirectionList';
-
-// import AddRedirectionList from './addComponents/add_redirectionList';
+import history from "./History"
+import HomeNetwork from './envSetup/HomeNetworkMenu/HomeNetwork';
+import RedirectionList from './envSetup/RedirectionListMenu/RedirectionList';
+import AddRedirectionList from "./envSetup/RedirectionListMenu/AddRedirectionList"
+import AddHomeNetwork from "./envSetup/HomeNetworkMenu/AddHomeNetwork";
 
 class Main extends Component{
     render(){
         return(
-            <HashRouter> 
+            <Router history={history}> 
             <div>
                 <h1>SMS Hub</h1>
                 <ul className="header">
@@ -93,17 +93,21 @@ class Main extends Component{
 
 
                 <div className="content">
+
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/stuff" component={Stuff}/>
                     <Route path="/contact" component={Contact}/>
                     <Route path="/link1" component={Link1}/>
                     <Route path="/envSetup/homeNetwork" component={HomeNetwork}/>
                     <Route path="/envSetup/RedirectionList" component={RedirectionList} />
+                    <Route path="/add-homentw" component={AddHomeNetwork}/>
+                    <Route path="/add-redirectionList" component={AddRedirectionList}/>
 
-                    {/* <Route path="/addComponents/add_redirectionList" component={AddRedirectionList} /> */}
+
+
                 </div>
             </div>
-        </HashRouter>
+        </Router>
         );
     }
 }
