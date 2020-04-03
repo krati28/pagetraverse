@@ -100,7 +100,7 @@ class Main extends Component{
                     <Route path="/link1" component={Link1}/>
                     <Route path="/envSetup/homeNetwork" component={HomeNetwork}/>
                     <Route path="/envSetup/RedirectionList" component={RedirectionList} />
-                    <Route path="/add-homentw" component={AddHomeNetwork}/>
+                    <Route path="/add-homeNetwork" component={AddHomeNetwork}/>
                     <Route path="/add-redirectionList" component={AddRedirectionList}/>
 
 
