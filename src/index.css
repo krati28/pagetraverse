@@ -85,24 +85,18 @@ body {
   /* .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0} */
 
 
-
-  /* .vertical-menu {
-    width: 200px;
+  .required:after {
+    content:" *";
+    color: red;
   }
-  
-  .vertical-menu a {
-    background-color: #eee;
-    color: black;
-    display: block;
-    padding: 12px;
+
+  .gaping{
+    
+    margin-right: 30px;
+    text-align: center;
     text-decoration: none;
   }
-  
-  .vertical-menu a:hover {
-    background-color: #ccc;
+
+  .mandatory{
+    color:red;
   }
-  
-  .vertical-menu a.active {
-    background-color: #4CAF50;
-    color: white;
-  } */

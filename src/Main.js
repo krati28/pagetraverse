@@ -6,9 +6,17 @@ import Contact from "./Contact"
 import Link1 from "./link1"
 import history from "./History"
 import HomeNetwork from './envSetup/HomeNetworkMenu/HomeNetwork';
+import AddHomeNetwork from "./envSetup/HomeNetworkMenu/AddHomeNetwork";
 import RedirectionList from './envSetup/RedirectionListMenu/RedirectionList';
 import AddRedirectionList from "./envSetup/RedirectionListMenu/AddRedirectionList"
-import AddHomeNetwork from "./envSetup/HomeNetworkMenu/AddHomeNetwork";
+import DealManagement from "./envSetup/DealManagementMenu/DealManagement";
+import AddDealManagement from "./envSetup/DealManagementMenu/AddDealManagement";
+import CustSupplierGrp from "./envSetup/CustSupplierGrpMenu/CustSupplierGrp";
+import AddCustSupplierGrp from "./envSetup/CustSupplierGrpMenu/AddCustSupplierGrp";
+import ChannelPartner from "./envSetup/ChannelPartnerMenu/ChannelPartner";
+import AddChannelPartner from "./envSetup/ChannelPartnerMenu/AddChannelPartner";
+import PathDetails from "./envSetup/PathDetailsMenu/PathDetails";
+import AddPathDetails from "./envSetup/PathDetailsMenu/AddPathDetails";
 
 class Main extends Component{
     render(){
@@ -27,20 +35,20 @@ class Main extends Component{
                     <div class="dropdown">
                         <button class="dropbtn">Environment Setup</button>
                             <div class="dropdown-content">
-                                <ul> <NavLink  to="/envSetup/homeNetwork">Home Network</NavLink></ul>
+                                <ul> <NavLink  to="/environmentSetup-homeNetwork">Home Network</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Retry Policy</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Redirection Accounts</NavLink></ul>
-                                <ul> <NavLink  to="/envSetup/RedirectionList">Redirection Lists</NavLink></ul>
+                                <ul> <NavLink  to="/environmentSetup-redirectionList">Redirection Lists</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Operator Profile</NavLink></ul>
-                                <ul> <NavLink  to="/link1">Path Details</NavLink></ul>
+                                <ul> <NavLink  to="/environmentSetup-pathDetails">Path Details</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Operator Cluster</NavLink></ul>
                                 <ul> <NavLink  to="/link1">LCR Profile</NavLink></ul>
                                 <ul> <NavLink  to="/link1">SC AT LCR Profile</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Customer Suppliers</NavLink></ul>
                                 <ul> <NavLink  to="/link1">HTTP Templates</NavLink></ul>
-                                <ul> <NavLink  to="/link1">Customer Supplier Group</NavLink></ul>
-                                <ul> <NavLink  to="/link1">Deal Management</NavLink></ul>
-                                <ul> <NavLink  to="/link1">Channel Partner</NavLink></ul>
+                                <ul> <NavLink  to="/environmentSetup-customerSupplierGroup">Customer Supplier Group</NavLink></ul>
+                                <ul> <NavLink  to="/environmentSetup-dealManagement">Deal Management</NavLink></ul>
+                                <ul> <NavLink  to="/environmentSetup-channelPartner">Channel Partner</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Customer Credit Profile</NavLink></ul>
                                 <ul> <NavLink  to="/link1">Credit Transaction</NavLink></ul>
                             </div>
@@ -98,13 +106,24 @@ class Main extends Component{
                     <Route path="/stuff" component={Stuff}/>
                     <Route path="/contact" component={Contact}/>
                     <Route path="/link1" component={Link1}/>
-                    <Route path="/envSetup/homeNetwork" component={HomeNetwork}/>
-                    <Route path="/envSetup/RedirectionList" component={RedirectionList} />
+
+                    <Route path="/environmentSetup-homeNetwork" component={HomeNetwork}/>
                     <Route path="/add-homeNetwork" component={AddHomeNetwork}/>
+
+                    <Route path="/environmentSetup-redirectionList" component={RedirectionList} />
                     <Route path="/add-redirectionList" component={AddRedirectionList}/>
+                    
+                    <Route path="/environmentSetup-dealManagement" component={DealManagement}/>
+                    <Route path="/add-dealManagement" component={AddDealManagement}/>
 
+                    <Route path="/environmentSetup-customerSupplierGroup" component={CustSupplierGrp}/>
+                    <Route path="/add-customerSupplierGroup" component={AddCustSupplierGrp}/>
 
+                    <Route path="/environmentSetup-channelPartner" component={ChannelPartner}/>
+                    <Route path="/add-channelPartner" component={AddChannelPartner}/>
 
+                    <Route path="/environmentSetup-pathDetails" component={PathDetails}/>
+                    <Route path="/add-pathDetails" component={AddPathDetails}/>
                 </div>
             </div>
         </Router>

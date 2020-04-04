@@ -3,7 +3,6 @@ import history from "../../History";
 import {Button} from "react-bootstrap";
 
 class RedirectionList extends Component{
-
     render(){
         return(
             <div>
